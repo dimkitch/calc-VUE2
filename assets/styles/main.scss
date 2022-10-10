@@ -1,0 +1,35 @@
+@import "global/reset.scss";
+@import "global/variables.scss";
+// @import "swiper/swiper-bundle.css";
+
+body {
+  // TODO: дефолтные стили
+  font-size: $font-size-main-text;
+  color: $color-dark-simple;
+  font-weight: $font-weight-main-text;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+.container {
+  max-width: 1380px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-desktop-md) {
+    max-width: $container-max-width-desktop-md;
+  }
+  @media (max-width: $breakpoint-tablet) {
+    max-width: $container-max-width-tablet;
+  }
+  @media (max-width: $breakpoint-tablet-md) {
+    max-width: $container-max-width-tablet-md;
+  }
+  @media (max-width: $breakpoint-mob) {
+    max-width: $container-max-width-mob;
+    padding: 0 51px;
+  }
+}
